@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Machine learning models
+models/*.keras
+models/*.h5
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
