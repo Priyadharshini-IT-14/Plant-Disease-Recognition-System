@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # --------------------------------------------------
 
 MODEL_PATH = hf_hub_download(
-    repo_id="Priya-S-14/plant-disease-recognition-model",
+    repo_id="Priya-S-14/plant-disease-model",
     filename="plant_disease_recog_model_pwp.keras",
     repo_type="model"
 )
