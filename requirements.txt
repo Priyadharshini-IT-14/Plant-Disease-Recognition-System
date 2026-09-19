@@ -3,3 +3,4 @@ numpy
 Pillow
 tensorflow==2.21.0
 gunicorn
+huggingface_hub
