@@ -4,7 +4,7 @@ import json
 import uuid
 import os
 import tensorflow as tf
-
+from huggingface_hub import hf_hub_download
 
 # --------------------------------------------------
 # Flask application
@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # File paths
 # --------------------------------------------------
 
-MODEL_PATH = os.path.join(
-    BASE_DIR,
-    "models",
-    "plant_disease_recog_model_pwp.keras"
+MODEL_PATH = hf_hub_download(
+    repo_id="Priya-S-14/plant-disease-recognition-model",
+    filename="plant_disease_recog_model_pwp.keras",
+    repo_type="model"
 )
 
 JSON_PATH = os.path.join(
